@@ -54,3 +54,5 @@ if ( ! function_exists('lam_theme_features') ) {
   add_action( 'after_setup_theme', 'lam_theme_features' );
 
 }
+
+require_once( 'functions/scripts-stylesheets.php' );
