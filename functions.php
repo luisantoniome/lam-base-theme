@@ -58,3 +58,5 @@ if ( ! function_exists('lam_theme_features') ) {
 require_once( 'functions/scripts-stylesheets.php' );
 
 require_once( 'functions/menus.php' );
+
+require_once( 'functions/sidebars.php' );
