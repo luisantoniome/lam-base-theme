@@ -1,3 +1,13 @@
+<?php
+/**
+ * Header file
+ *
+ * This file handles the head and header of each page
+ *
+ * @package lam-base-theme
+ * @since 1.0
+*/
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>

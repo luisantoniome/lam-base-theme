@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Sidebars registration
+ * @since 1.0
+ */
+
 function lam_register_sidebars() {
 
   register_sidebar(array(
