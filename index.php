@@ -1,5 +1,27 @@
 <?php get_header(); ?>
 
+<?php if ( is_archive() ) : ?>
+
+  <h1><?php the_archive_title(); ?></h1>
+
+<?php elseif ( is_search() ) : ?>
+
+  <h1><?php _e('Search: ', 'lam'); ?><?php the_search_query(); ?></h1>
+
+<?php elseif ( is_404() ) : ?>
+
+  <h1><?php _e('Page not found.', 'lam'); ?></h1>
+
+<?php elseif ( is_home() ) : ?>
+
+  <h1><?php _e('Blog', 'lam'); ?></h1>
+
+<?php else : ?>
+
+  <h1><?php bloginfo('name'); ?></h1>
+
+<?php endif; ?>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   
   <h2><a href="<?php the_permalink(); ?>"><?php the_title() ;?></a></h2>
