@@ -6,15 +6,15 @@
 
 <?php elseif ( is_search() ) : ?>
 
-  <h1><?php _e('Search: ', 'lam'); ?><?php the_search_query(); ?></h1>
+  <h1><?php _e('Search: ', 'lam-base-theme'); ?><?php the_search_query(); ?></h1>
 
 <?php elseif ( is_404() ) : ?>
 
-  <h1><?php _e('Page not found.', 'lam'); ?></h1>
+  <h1><?php _e('Page not found.', 'lam-base-theme'); ?></h1>
 
 <?php elseif ( is_home() ) : ?>
 
-  <h1><?php _e('Blog', 'lam'); ?></h1>
+  <h1><?php _e('Blog', 'lam-base-theme'); ?></h1>
 
 <?php else : ?>
 
@@ -29,7 +29,7 @@
 
 <?php endwhile; else : ?>
 
-	<p><?php esc_html_e( 'Sorry, no content to show.' ); ?></p>
+	<p><?php esc_html_e( 'Sorry, no content to show.', 'lam-base-theme' ); ?></p>
   
 <?php endif; ?>
 

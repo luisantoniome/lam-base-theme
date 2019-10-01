@@ -49,7 +49,7 @@ if ( ! function_exists('lam_theme_features') ) {
     add_editor_style( 'editor-style.css' );
 
     // Add theme support for Translation
-    load_theme_textdomain( 'lam', get_template_directory() . '/language' );
+    load_theme_textdomain( 'lam-base-theme', get_template_directory() . '/language' );
   }
   add_action( 'after_setup_theme', 'lam_theme_features' );
 

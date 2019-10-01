@@ -8,7 +8,7 @@
 function lam_register_menus() {
 
   register_nav_menus(array(
-    'main-menu' => __('Main Menu', 'lam')
+    'main-menu' => __('Main Menu', 'lam-base-theme')
   ));
 
 }

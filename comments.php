@@ -1,7 +1,7 @@
 <?php
 if ( !empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( $_SERVER['SCRIPT_FILENAME'] ) == 'comments.php' ) :
 
-  die( __('Access denied to this route.', 'lam') );
+  die( __('Access denied to this route.', 'lam-base-theme') );
 
 endif;
 ?>
@@ -10,7 +10,7 @@ endif;
 
   <?php if ( post_password_required() ) : ?>
 
-  <p><?php __('This content requires password', 'lam') ?></p>
+  <p><?php __('This content requires password', 'lam-base-theme') ?></p>
   </div>
   
   <?php return; endif; ?>
@@ -21,9 +21,9 @@ endif;
 
     <h3 class="comments-title">
       <?php comments_number(
-        __('Be the first to comment!', 'lam'),
-        __('There is one comment.', 'lam'),
-        __('There are % comments.', 'lam')
+        __('Be the first to comment!', 'lam-base-theme'),
+        __('There is one comment.', 'lam-base-theme'),
+        __('There are % comments.', 'lam-base-theme')
       ); ?>
     </h3>
 
@@ -38,10 +38,10 @@ endif;
       <div class="comments-nav-section">
 
         <p class="alignleft">
-          <?php previous_comments_link( __('Previous comments', 'lam') ); ?>
+          <?php previous_comments_link( __('Previous comments', 'lam-base-theme') ); ?>
         </p>
         <p class="alignright">
-          <?php next_comments_link( __('Recent comments', 'lam') ); ?>
+          <?php next_comments_link( __('Recent comments', 'lam-base-theme') ); ?>
         </p>
 
       </div>
