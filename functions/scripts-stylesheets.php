@@ -14,3 +14,13 @@ function lam_load_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'lam_load_styles' );
+
+function lam_load_scripts() {
+
+  wp_register_script( 'theme_scripts', get_stylesheet_directory_uri() . '/js/index.js', '', '0.1', true );
+
+  wp_enqueue_script( 'theme_scripts' );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'lam_load_scripts' );
