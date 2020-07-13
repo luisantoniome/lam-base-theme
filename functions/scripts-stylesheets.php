@@ -7,7 +7,7 @@
 
 function lam_load_styles() {
 
-  wp_register_style( 'theme_style', get_stylesheet_uri(), '', 1.0, 'all' );
+  wp_register_style( 'theme_style', get_stylesheet_uri(), null, time(), 'all' );
 
   wp_enqueue_style( 'theme_style' );
 
